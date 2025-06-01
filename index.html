@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./dist/output.css" type="text/css">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet" crossorigin="anonymous">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+</head>
+
+<body class="w-screen h-screen bg-gradient">
+  <main
+    class="w-full h-full grid grid-cols-1 gap-0 min-md:grid-flow-col min-md:grid-cols-9 min-md:grid-rows-4 text-center text-[16px] font-[Josefin_Sans]">
+
+    <header
+      class="max-md:flex max-md:items-center max-md:flex-wrap min-md:px-6 min-md:pt-14 min-md:text-start min-md:col-span-4 min-md:col-start-2">
+      <img src="./images/logo.svg" alt="logo" class="max-md:py-6 max-md:px-2 max-md:scale-65 ">
+    </header>
+
+    <div
+      class="w-full h-full flex items-center justify-center flex-wrap min-md:col-span-4 min-md:col-start-6 min-md:row-span-4">
+      <img src="../images/hero-mobile.jpg" alt="hero" class="w-full h-full min-md:hidden bg-cover">
+      <div class="w-full h-full min-md:bg-[url(../images/hero-desktop.jpg)] bg-cover min-md:bg-center"></div>
+    </div>
+
+    <section
+      class="px-5 py-16 min-md:px-6 min-md:py-6 min-md:col-span-3 min-md:col-start-2 min-md:row-span-3 min-md:row-start-2 min-md:text-start">
+      <p
+        class="text-desatured-red text-[2.5rem] font-light tracking-[0.20em] leading-10 min-md:leading-18 min-md:text-[4rem]">
+        WE'RE
+      </p>
+      <p
+        class="text-dark-grayish-red text-[2.5rem] font-semibold tracking-[0.20em] leading-11 min-md:leading-18 min-md:text-[4rem]">
+        COMING SOON
+      </p>
+      <p class="text-desatured-red font-normal py-6 min-md:leading-7">
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <div class="flex flex-nowrap w-full items-center max-[424px]:py-8 min-[425px]:pt-4 min-[425px]:pb-2">
+        <input type="text" name="email" id="inEmail" placeholder="Email Address"
+          class="placeholder:text-desatured-red border-1 border-r-0 border-desatured-red rounded-tl-full rounded-bl-full p-3.5 px-8 w-full">
+        <div class="border-1 border-l-0 rounded-tr-full rounded-br-full border-desatured-red w-28">
+          <button class="btn-gradient py-[15px] border-1 w-full border-desatured-red font-normal min-md:cursor-pointer
+            rounded-full shadow-lg shadow-desatured-red flex items-center justify-center">
+            <img src="./images/icon-arrow.svg" alt="icon-arrow" class="self-center">
+          </button>
+          <div id="emailAlert"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        class="attribution-text">Frontend Mentor</a>.
+      Coded by <a href="#" class="attribution-text">C.Junior</a>.
+    </p>
+  </footer>
+</body>
+
+</html>

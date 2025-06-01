@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+	--color-dark-blue: hsl(228, 45%, 44%);
+	--color-desatured-red: hsl(0, 36%, 70%);
+	--color-soft-red: hsl(0, 93%, 68%);
+	--color-dark-grayish-red: hsl(0, 6%, 24%);
+}
+
+.attribution {
+	@apply text-[11px] text-center text-desatured-red;
+}
+
+.attribution-text {
+	@apply text-dark-grayish-red;
+}
+
+/* Gradients */
+.bg-gradient {
+	background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+.btn-gradient {
+	background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+	color: white;
+}
