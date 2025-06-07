@@ -21,7 +21,10 @@ btnSubmit.addEventListener('click', () => {
         paragraph.classList.add('text-soft-red', 'text-[16px]', 'text-start', 'pl-8')
         emailAlert.appendChild(paragraph)
     }
-    else {
+    if (validarEmail(userEmail)) {
+        email.classList.remove('text-soft-red', 'border-soft-red', 'bg-[url("/images/icon-error.svg")]', 'bg-no-repeat', 'bg-position-[center_right_1.5rem]')
+        btnDiv.classList.remove('border-soft-red')
+        emailAlert.innerHTML = ''
         email.classList.add('text-emerald-200', 'border-2', 'border-emerald-200', 'bg-white')
         btnDiv.classList.add('border-2', 'border-emerald-200', 'bg-[#E8F0FE]')
     }
