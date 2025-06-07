@@ -13,7 +13,7 @@ function validarEmail(email) {
 btnSubmit.addEventListener('click', () => {
     const userEmail = email.value
 
-    if (!validarEmail(userEmail)) {
+    if (!validarEmail(userEmail) && emailAlert.childElementCount == 0) {
         email.classList.add('text-soft-red', 'border-2', 'border-soft-red', 'bg-[url("/images/icon-error.svg")]', 'bg-no-repeat', 'bg-position-[center_right_1.5rem]')
         btnDiv.classList.add('border-2', 'border-soft-red')
         const paragraph = document.createElement('p')
